@@ -1,9 +1,9 @@
 package com.example.earthquakereport_2
 
-class items(
+class EarthQuake(
     private val magnitude:Double,
     private val location:String,
-    private val date_and_time:Long,
+    private val timeInMillisecond:Long,
     private val url:String
 ) {
     fun getMagnitude():Double{
@@ -13,7 +13,7 @@ class items(
         return location
     }
     fun getDateAndTime():Long{
-        return date_and_time
+        return timeInMillisecond
     }
     fun getUrl():String{
         return url

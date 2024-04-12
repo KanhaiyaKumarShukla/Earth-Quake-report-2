@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat
 import java.text.DecimalFormat
 import java.text.SimpleDateFormat
 
-class custom_adaptor(context: Context, items:ArrayList<items>): ArrayAdapter<items>(context, 0, items) {
+class custom_adaptor(context: Context, earthQuake:ArrayList<EarthQuake>): ArrayAdapter<EarthQuake>(context, 0, earthQuake) {
     private val TEXT_SEPARATOR="of"
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
          var listItemView=convertView
